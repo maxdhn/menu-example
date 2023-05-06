@@ -1,0 +1,33 @@
+.item {
+  background-color: var(--gray-light);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item {
+  justify-content: space-between;
+  transition: background-color 0.1s linear;
+}
+
+.item:hover {
+  background-color: var(--blue-light);
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+
+.item:active {
+  background-color: rgb(--blue-medium);
+}
+
+.item > svg {
+  color: rgb(209 213 219);
+  font-size: 1.2rem;
+  transition: color 0.1s linear;
+}
+
+.item:hover > svg {
+  transition: color 0.3s linear;
+  color: rgb(3 7 18);
+}
